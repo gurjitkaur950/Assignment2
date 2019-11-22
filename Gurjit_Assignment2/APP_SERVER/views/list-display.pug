@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Here is a list of my music #{title}
+  ul
+    each val in song
+      li= val.singer + "- "+ val.songName
